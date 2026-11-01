@@ -1,0 +1,571 @@
+# 1. WHILE LOOP (15 Programs)
+### 1. Print Numbers from 1 to 10
+```python
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
+```
+
+### 2. Print Numbers from 10 to 1
+```python
+i = 10
+while i >= 1:
+    print(i)
+    i -= 1
+```
+
+### 3. Sum of Numbers from 1 to 10
+```python
+i = 1
+total = 0
+
+while i <= 10:
+    total += i
+    i += 1
+
+print(total)
+```
+
+### 4. Print Even Numbers
+```python
+i = 2
+while i <= 20:
+    print(i)
+    i += 2
+```
+
+### 5. Print Odd Numbers
+```python
+i = 1
+while i <= 20:
+    print(i)
+    i += 2
+```
+
+### 6. Multiplication Table
+```python
+num = 5
+i = 1
+
+while i <= 10:
+    print(num, "x", i, "=", num * i)
+    i += 1
+```
+
+### 7. Reverse a Number
+```python
+num = 12345
+rev = 0
+
+while num > 0:
+    digit = num % 10
+    rev = rev * 10 + digit
+    num //= 10
+
+print(rev)
+```
+
+### 8. Count Digits
+```python
+num = 12345
+count = 0
+
+while num > 0:
+    count += 1
+    num //= 10
+
+print(count)
+```
+
+### 9. Sum of Digits
+```python
+num = 1234
+total = 0
+
+while num > 0:
+    total += num % 10
+    num //= 10
+
+print(total)
+```
+
+### 10. Check Palindrome Number
+```python
+num = 121
+temp = num
+rev = 0
+
+while num > 0:
+    rev = rev * 10 + num % 10
+    num //= 10
+
+if temp == rev:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+```
+
+### 11. Factorial of a Number
+```python
+num = 5
+fact = 1
+
+while num > 0:
+    fact *= num
+    num -= 1
+
+print(fact)
+```
+
+### 12. Fibonacci Series
+```python
+a = 0
+b = 1
+i = 1
+
+while i <= 10:
+    print(a)
+    a, b = b, a + b
+    i += 1
+```
+
+### 13. Check Prime Number
+```python
+num = 7
+i = 2
+count = 0
+
+while i < num:
+    if num % i == 0:
+        count += 1
+    i += 1
+
+if count == 0 and num > 1:
+    print("Prime")
+else:
+    print("Not Prime")
+```
+
+### 14. Check Armstrong Number
+```python
+num = 153
+temp = num
+total = 0
+
+while num > 0:
+    digit = num % 10
+    total += digit ** 3
+    num //= 10
+
+if temp == total:
+    print("Armstrong")
+else:
+    print("Not Armstrong")
+```
+
+### 15. Reverse a String
+```python
+s = "Python"
+rev = ""
+i = len(s) - 1
+
+while i >= 0:
+    rev += s[i]
+    i -= 1
+
+print(rev)
+```
+
+---
+
+# 2. LIST (15 Programs)
+
+### 16. Display All List Elements
+```python
+a = [10, 20, 30, 40, 50]
+i = 0
+
+while i < len(a):
+    print(a[i])
+    i += 1
+```
+
+### 17. Find Length Without len()
+```python
+a = [10, 20, 30, 40]
+count = 0
+
+for i in a:
+    count += 1
+
+print(count)
+```
+
+### 18. Find Sum of List Elements
+```python
+a = [10, 20, 30, 40]
+total = 0
+
+for i in a:
+    total += i
+
+print(total)
+```
+
+### 19. Find Largest Number
+```python
+a = [12, 45, 67, 23, 89]
+largest = a[0]
+
+for i in a:
+    if i > largest:
+        largest = i
+
+print(largest)
+```
+
+### 20. Find Smallest Number
+```python
+a = [12, 45, 67, 23, 9]
+smallest = a[0]
+
+for i in a:
+    if i < smallest:
+        smallest = i
+
+print(smallest)
+```
+
+### 21. Display Even Numbers
+```python
+a = [12, 15, 20, 25, 30]
+
+for i in a:
+    if i % 2 == 0:
+        print(i)
+```
+
+### 22. Display Odd Numbers
+```python
+a = [12, 15, 20, 25, 30]
+
+for i in a:
+    if i % 2 != 0:
+        print(i)
+```
+
+### 23. Count Even Numbers
+```python
+a = [2, 5, 8, 11, 14]
+count = 0
+
+for i in a:
+    if i % 2 == 0:
+        count += 1
+
+print(count)
+```
+
+### 24. Reverse List Without reverse()
+```python
+a = [10, 20, 30, 40]
+rev = []
+i = len(a) - 1
+
+while i >= 0:
+    rev.append(a[i])
+    i -= 1
+
+print(rev)
+```
+
+### 25. Search an Element
+```python
+a = [10, 20, 30, 40]
+search = 30
+
+if search in a:
+    print("Element Found")
+else:
+    print("Not Found")
+```
+
+### 26. Remove Duplicate Elements
+```python
+a = [10, 20, 10, 30, 20]
+b = []
+
+for i in a:
+    if i not in b:
+        b.append(i)
+
+print(b)
+```
+
+### 27. Count Occurrences of an Element
+```python
+a = [10, 20, 10, 30, 10]
+count = 0
+
+for i in a:
+    if i == 10:
+        count += 1
+
+print(count)
+```
+
+### 28. Find Second Largest Number
+```python
+a = [10, 50, 30, 80, 60]
+a.sort()
+
+print(a[-2])
+```
+
+### 29. Copy a List
+```python
+a = [10, 20, 30]
+b = a.copy()
+
+print(b)
+```
+
+### 30. Merge Two Lists
+```python
+a = [10, 20, 30]
+b = [40, 50, 60]
+
+c = a + b
+print(c)
+```
+
+---
+
+# 3. TUPLE (10 Programs)
+
+### 31. Create and Print Tuple
+```python
+a = (10, 20, 30, 40)
+print(a)
+```
+
+### 32. Access Tuple Elements
+```python
+a = (10, 20, 30, 40)
+
+for i in a:
+    print(i)
+```
+
+### 33. Find Length Without len()
+```python
+a = (10, 20, 30, 40)
+count = 0
+
+for i in a:
+    count += 1
+
+print(count)
+```
+
+### 34. Find Sum of Tuple Elements
+```python
+a = (10, 20, 30, 40)
+total = 0
+
+for i in a:
+    total += i
+
+print(total)
+```
+
+### 35. Find Maximum Number
+```python
+a = (10, 50, 30, 80, 20)
+largest = a[0]
+
+for i in a:
+    if i > largest:
+        largest = i
+
+print(largest)
+```
+
+### 36. Find Minimum Number
+```python
+a = (10, 50, 30, 5, 20)
+smallest = a[0]
+
+for i in a:
+    if i < smallest:
+        smallest = i
+
+print(smallest)
+```
+
+### 37. Display Even Numbers
+```python
+a = (10, 15, 20, 25, 30)
+
+for i in a:
+    if i % 2 == 0:
+        print(i)
+```
+
+### 38. Count an Element
+```python
+a = (10, 20, 10, 30, 10)
+
+print(a.count(10))
+```
+
+### 39. Find Index of an Element
+```python
+a = (10, 20, 30, 40)
+
+print(a.index(30))
+```
+
+### 40. Convert Tuple into List
+```python
+a = (10, 20, 30)
+
+b = list(a)
+print(b)
+```
+
+---
+
+# 4. DICTIONARY (10 Programs)
+
+### 41. Create and Print Dictionary
+```python
+student = {
+    "name": "Rahul",
+    "age": 21,
+    "marks": 85
+}
+
+print(student)
+```
+
+### 42. Display All Keys
+```python
+student = {
+    "name": "Rahul",
+    "age": 21,
+    "marks": 85
+}
+
+for i in student:
+    print(i)
+```
+
+### 43. Display All Values
+```python
+student = {
+    "name": "Rahul",
+    "age": 21,
+    "marks": 85
+}
+
+for i in student.values():
+    print(i)
+```
+
+### 44. Display Keys and Values
+```python
+student = {
+    "name": "Rahul",
+    "age": 21,
+    "marks": 85
+}
+
+for k, v in student.items():
+    print(k, v)
+```
+
+### 45. Add a New Key
+```python
+student = {
+    "name": "Rahul",
+    "age": 21
+}
+
+student["city"] = "Pune"
+print(student)
+```
+
+### 46. Update Dictionary Value
+```python
+student = {
+    "name": "Rahul",
+    "marks": 70
+}
+
+student["marks"] = 90
+print(student)
+```
+
+### 47. Delete a Key
+```python
+student = {
+    "name": "Rahul",
+    "age": 21
+}
+
+student.pop("age")
+print(student)
+```
+
+### 48. Find Total Marks of Students
+```python
+marks = {
+    "Rahul": 80,
+    "Amit": 70,
+    "Priya": 90
+}
+
+total = 0
+
+for i in marks.values():
+    total += i
+
+print(total)
+```
+
+### 49. Display Students Scoring Above 60
+```python
+marks = {
+    "Rahul": 80,
+    "Amit": 45,
+    "Priya": 90,
+    "Neha": 55
+}
+
+for k, v in marks.items():
+    if v > 60:
+        print(k, v)
+```
+
+### 50. Count Students Who Passed
+```python
+marks = {
+    "Rahul": 80,
+    "Amit": 45,
+    "Priya": 90,
+    "Neha": 55
+}
+
+count = 0
+
+for i in marks.values():
+    if i >= 60:
+        count += 1
+
+print("Passed students:", count)
+```
+
+
+
