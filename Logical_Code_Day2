@@ -1,0 +1,347 @@
+
+print("=" * 60)
+print("50 PYTHON DICTIONARY PROGRAMS")
+print("=" * 60)
+
+# 1. Create and print a dictionary
+print("\n1. Create and print a dictionary")
+student = {"name": "Amit", "age": 20, "city": "Pune"}
+print(student)
+
+# 2. Access a value using its key
+print("\n2. Access a value using its key")
+student = {"name": "Amit", "age": 20}
+print(student["name"])
+
+# 3. Access a value using get()
+print("\n3. Access a value using get()")
+student = {"name": "Amit", "age": 20}
+print(student.get("age"))
+
+# 4. Add a new key-value pair
+print("\n4. Add a new key-value pair")
+student = {"name": "Amit"}
+student["city"] = "Pune"
+print(student)
+
+# 5. Update an existing value
+print("\n5. Update an existing value")
+student = {"name": "Amit", "age": 20}
+student["age"] = 21
+print(student)
+
+# 6. Add multiple items using update()
+print("\n6. Add multiple items using update()")
+student = {"name": "Amit"}
+student.update({"age": 20, "city": "Pune"})
+print(student)
+
+# 7. Print all keys
+print("\n7. Print all keys")
+student = {"name": "Amit", "age": 20, "city": "Pune"}
+print(student.keys())
+
+# 8. Print all values
+print("\n8. Print all values")
+student = {"name": "Amit", "age": 20, "city": "Pune"}
+print(student.values())
+
+# 9. Print all key-value pairs
+print("\n9. Print all key-value pairs")
+student = {"name": "Amit", "age": 20}
+print(student.items())
+
+# 10. Display keys using a for loop
+print("\n10. Display keys using a for loop")
+student = {"name": "Amit", "age": 20, "city": "Pune"}
+for key in student:
+    print(key)
+
+# 11. Display values using a for loop
+print("\n11. Display values using a for loop")
+student = {"name": "Amit", "age": 20, "city": "Pune"}
+for value in student.values():
+    print(value)
+
+# 12. Display keys and values using a for loop
+print("\n12. Display keys and values using a for loop")
+student = {"name": "Amit", "age": 20}
+for key, value in student.items():
+    print(key, ":", value)
+
+# 13. Find the number of items without len()
+print("\n13. Find the number of items without len()")
+student = {"name": "Amit", "age": 20, "city": "Pune"}
+count = 0
+for key in student:
+    count += 1
+print("Total items:", count)
+
+# 14. Find the number of items using len()
+print("\n14. Find the number of items using len()")
+student = {"name": "Amit", "age": 20, "city": "Pune"}
+print("Total items:", len(student))
+
+# 15. Check whether a key exists
+print("\n15. Check whether a key exists")
+student = {"name": "Amit", "age": 20}
+if "age" in student:
+    print("Key exists")
+else:
+    print("Key does not exist")
+
+# 16. Check whether a value exists
+print("\n16. Check whether a value exists")
+student = {"name": "Amit", "age": 20}
+if 20 in student.values():
+    print("Value exists")
+else:
+    print("Value does not exist")
+
+# 17. Delete an item using del
+print("\n17. Delete an item using del")
+student = {"name": "Amit", "age": 20, "city": "Pune"}
+del student["age"]
+print(student)
+
+# 18. Remove an item using pop()
+print("\n18. Remove an item using pop()")
+student = {"name": "Amit", "age": 20}
+removed_value = student.pop("age")
+print("Removed:", removed_value)
+print(student)
+
+# 19. Remove the last inserted item using popitem()
+print("\n19. Remove the last inserted item using popitem()")
+student = {"name": "Amit", "age": 20}
+print("Removed:", student.popitem())
+print(student)
+
+# 20. Remove all items using clear()
+print("\n20. Remove all items using clear()")
+student = {"name": "Amit", "age": 20}
+student.clear()
+print(student)
+
+# 21. Copy a dictionary using copy()
+print("\n21. Copy a dictionary using copy()")
+marks = {"Math": 80, "English": 75}
+new_marks = marks.copy()
+print(new_marks)
+
+# 22. Create a dictionary using dict()
+print("\n22. Create a dictionary using dict()")
+student = dict(name="Amit", age=20, city="Pune")
+print(student)
+
+# 23. Create a dictionary using fromkeys()
+print("\n23. Create a dictionary using fromkeys()")
+keys = ["name", "age", "city"]
+student = dict.fromkeys(keys, "Not given")
+print(student)
+
+# 24. Merge two dictionaries using update()
+print("\n24. Merge two dictionaries using update()")
+first = {"a": 10, "b": 20}
+second = {"c": 30, "d": 40}
+first.update(second)
+print(first)
+
+# 25. Find the total of dictionary values
+print("\n25. Find the total of dictionary values")
+marks = {"Math": 80, "English": 70, "Science": 90}
+total = 0
+for value in marks.values():
+    total += value
+print("Total marks:", total)
+
+# 26. Find the average of dictionary values
+print("\n26. Find the average of dictionary values")
+marks = {"Math": 80, "English": 70, "Science": 90}
+total = 0
+for value in marks.values():
+    total += value
+average = total / len(marks)
+print("Average:", average)
+
+# 27. Find the maximum value
+print("\n27. Find the maximum value")
+marks = {"Math": 80, "English": 70, "Science": 90}
+maximum = max(marks.values())
+print("Highest marks:", maximum)
+
+# 28. Find the minimum value
+print("\n28. Find the minimum value")
+marks = {"Math": 80, "English": 70, "Science": 90}
+minimum = min(marks.values())
+print("Lowest marks:", minimum)
+
+# 29. Display subjects with marks above 60
+print("\n29. Display subjects with marks above 60")
+marks = {"Math": 80, "English": 55, "Science": 90}
+for subject, score in marks.items():
+    if score > 60:
+        print(subject, score)
+
+# 30. Count students who passed (marks >= 35)
+print("\n30. Count students who passed")
+marks = {"Amit": 70, "Riya": 30, "Neha": 45, "Raj": 25}
+count = 0
+for score in marks.values():
+    if score >= 35:
+        count += 1
+print("Passed students:", count)
+
+# 31. Display students who failed (marks < 35)
+print("\n31. Display students who failed")
+marks = {"Amit": 70, "Riya": 30, "Neha": 45, "Raj": 25}
+for name, score in marks.items():
+    if score < 35:
+        print(name)
+
+# 32. Find the student with the highest marks
+print("\n32. Find the student with the highest marks")
+marks = {"Amit": 70, "Riya": 90, "Neha": 85}
+topper = max(marks, key=marks.get)
+print("Topper:", topper, "Marks:", marks[topper])
+
+# 33. Find the student with the lowest marks
+print("\n33. Find the student with the lowest marks")
+marks = {"Amit": 70, "Riya": 90, "Neha": 45}
+lowest = min(marks, key=marks.get)
+print("Lowest:", lowest, "Marks:", marks[lowest])
+
+# 34. Count how many times each character appears
+print("\n34. Count character frequency")
+word = "banana"
+frequency = {}
+for char in word:
+    frequency[char] = frequency.get(char, 0) + 1
+print(frequency)
+
+# 35. Count how many times each word appears
+print("\n35. Count word frequency")
+sentence = "python is easy and python is useful"
+frequency = {}
+for word in sentence.split():
+    frequency[word] = frequency.get(word, 0) + 1
+print(frequency)
+
+# 36. Convert two lists into a dictionary
+print("\n36. Convert two lists into a dictionary")
+keys = ["name", "age", "city"]
+values = ["Amit", 20, "Pune"]
+student = dict(zip(keys, values))
+print(student)
+
+# 37. Swap keys and values
+print("\n37. Swap keys and values")
+original = {"a": 1, "b": 2, "c": 3}
+swapped = {}
+for key, value in original.items():
+    swapped[value] = key
+print(swapped)
+
+# 38. Create a dictionary of even numbers and their squares
+print("\n38. Even numbers and their squares")
+squares = {}
+for number in range(1, 6):
+    if number % 2 == 0:
+        squares[number] = number ** 2
+print(squares)
+
+# 39. Create a dictionary of numbers and their cubes
+print("\n39. Numbers and their cubes")
+cubes = {}
+for number in range(1, 6):
+    cubes[number] = number ** 3
+print(cubes)
+
+# 40. Remove all items with a value below 50
+print("\n40. Remove items with values below 50")
+marks = {"Math": 80, "English": 40, "Science": 90, "History": 35}
+filtered = {}
+for subject, score in marks.items():
+    if score >= 50:
+        filtered[subject] = score
+print(filtered)
+
+# 41. Sort a dictionary by its keys
+print("\n41. Sort a dictionary by keys")
+data = {"c": 30, "a": 10, "b": 20}
+sorted_data = dict(sorted(data.items()))
+print(sorted_data)
+
+# 42. Sort a dictionary by its values
+print("\n42. Sort a dictionary by values")
+data = {"Amit": 70, "Riya": 90, "Neha": 80}
+sorted_data = dict(sorted(data.items(), key=lambda item: item[1]))
+print(sorted_data)
+
+# 43. Create a nested dictionary
+print("\n43. Create a nested dictionary")
+students = {
+    "student1": {"name": "Amit", "marks": 80},
+    "student2": {"name": "Riya", "marks": 90}
+}
+print(students)
+
+# 44. Access a value from a nested dictionary
+print("\n44. Access a nested dictionary value")
+students = {
+    "student1": {"name": "Amit", "marks": 80},
+    "student2": {"name": "Riya", "marks": 90}
+}
+print(students["student2"]["marks"])
+
+# 45. Add a new student to a nested dictionary
+print("\n45. Add a new student to a nested dictionary")
+students = {
+    "student1": {"name": "Amit", "marks": 80}
+}
+students["student2"] = {"name": "Riya", "marks": 90}
+print(students)
+
+# 46. Update a value in a nested dictionary
+print("\n46. Update a nested dictionary value")
+students = {
+    "student1": {"name": "Amit", "marks": 80}
+}
+students["student1"]["marks"] = 95
+print(students)
+
+# 47. Delete a key from a nested dictionary
+print("\n47. Delete a key from a nested dictionary")
+students = {
+    "student1": {"name": "Amit", "marks": 80, "city": "Pune"}
+}
+del students["student1"]["city"]
+print(students)
+
+# 48. Create a dictionary from 1 to 5 with number as value
+print("\n48. Create a dictionary using dictionary comprehension")
+numbers = {number: number for number in range(1, 6)}
+print(numbers)
+
+# 49. Create a dictionary of numbers and their even/odd status
+print("\n49. Store even or odd status in a dictionary")
+status = {}
+for number in range(1, 6):
+    if number % 2 == 0:
+        status[number] = "Even"
+    else:
+        status[number] = "Odd"
+print(status)
+
+# 50. Simple phone book search
+print("\n50. Simple phone book search")
+phone_book = {"Amit": "9876543210", "Riya": "9123456780", "Neha": "9988776655"}
+search_name = "Riya"
+if search_name in phone_book:
+    print(search_name, ":", phone_book[search_name])
+else:
+    print("Name not found")
+
+print("\n" + "=" * 60)
+print("ALL 50 PROGRAMS COMPLETED")
+print("=" * 60)
