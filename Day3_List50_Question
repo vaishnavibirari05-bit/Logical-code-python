@@ -1,0 +1,374 @@
+# # Python List – 50 Logical Programs
+# # Beginner to Intermediate Level
+
+# # 1. Create and Print a List
+# a = [10, 20, 30, 40, 50]
+# print(a)
+
+
+# # 2. Print Each Element
+# a = [10, 20, 30, 40, 50]
+# for i in a:
+#     print(i)
+
+
+# # 3. Find Length of List
+# a = [10, 20, 30, 40, 50]
+# print(len(a))
+
+
+# # 4. Find Sum of List Elements
+# a = [10, 20, 30, 40]
+# total = 0
+# for i in a:
+#     total += i
+# print(total)
+
+
+# # 5. Find Maximum Number
+# a = [12, 45, 67, 23, 89]
+# print(max(a))
+
+
+# # 6. Find Minimum Number
+# a = [12, 45, 67, 23, 89]
+# print(min(a))
+
+
+# # 7. Count Even Numbers
+# a = [10, 15, 20, 25, 30]
+# count = 0
+# for i in a:
+#     if i % 2 == 0:
+#         count += 1
+# print(count)
+
+
+# # 8. Count Odd Numbers
+# a = [10, 15, 20, 25, 30]
+# count = 0
+# for i in a:
+#     if i % 2 != 0:
+#         count += 1
+# print(count)
+
+
+# # 9. Print Even Numbers
+# a = [10, 15, 20, 25, 30]
+# for i in a:
+#     if i % 2 == 0:
+#         print(i)
+
+
+# # 10. Print Odd Numbers
+# a = [10, 15, 20, 25, 30]
+# for i in a:
+#     if i % 2 != 0:
+#         print(i)
+
+
+# # 11. Check Element Exists or Not
+# a = [10, 20, 30, 40, 50]
+# if 30 in a:
+#     print("Element found")
+# else:
+#     print("Element not found")
+
+
+# # 12. Find Index of Element
+# a = [10, 20, 30, 40]
+# print(a.index(30))
+
+
+# # 13. Count Occurrences
+# a = [10, 20, 10, 30, 10]
+# print(a.count(10))
+
+
+# # 14. Separate Positive and Negative Numbers
+# a = [10, -5, 20, -8, 30]
+# for i in a:
+#     if i > 0:
+#         print("Positive:", i)
+#     elif i < 0:
+#         print("Negative:", i)
+
+
+# # 15. Find Numbers Greater Than 50
+# a = [20, 60, 45, 80, 90]
+# for i in a:
+#     if i > 50:
+#         print(i)
+
+
+# # 16. Find Numbers Divisible by 5
+# a = [10, 12, 25, 33, 40]
+# for i in a:
+#     if i % 5 == 0:
+#         print(i)
+
+
+# # 17. Find Second Largest Number
+# a = [10, 40, 20, 80, 60]
+# a.sort()
+# print(a[-2])
+
+
+# # 18. Find Second Smallest Number
+# a = [10, 40, 20, 80, 60]
+# a.sort()
+# print(a[1])
+
+
+# # 19. Find Common Elements
+# a = [10, 20, 30, 40]
+# b = [30, 40, 50, 60]
+# for i in a:
+#     if i in b:
+#         print(i)
+
+
+# # 20. Find Elements Not Common
+# a = [10, 20, 30, 40]
+# b = [30, 40, 50, 60]
+# for i in a:
+#     if i not in b:
+#         print(i)
+
+
+# # 21. Reverse a List
+# a = [10, 20, 30, 40]
+# print(a[::-1])
+
+
+# # 22. Reverse Without Slicing
+# a = [10, 20, 30, 40]
+# b = []
+# for i in a:
+#     b.insert(0, i)
+# print(b)
+
+
+# # 23. Copy a List
+# a = [10, 20, 30, 40]
+# b = a.copy()
+# print(b)
+
+
+# # 24. Merge Two Lists
+# a = [10, 20, 30]
+# b = [40, 50, 60]
+# c = a + b
+# print(c)
+
+
+# # 25. Remove Duplicate Elements
+# a = [10, 20, 10, 30, 20, 40]
+# b = []
+# for i in a:
+#     if i not in b:
+#         b.append(i)
+# print(b)
+
+
+# # 26. Sort Ascending Order
+# a = [50, 20, 40, 10, 30]
+# a.sort()
+# print(a)
+
+
+# # 27. Sort Descending Order
+# a = [50, 20, 40, 10, 30]
+# a.sort(reverse=True)
+# print(a)
+
+
+# # 28. Insert an Element
+# a = [10, 20, 40, 50]
+# a.insert(2, 30)
+# print(a)
+
+
+# # 29. Remove an Element
+# a = [10, 20, 30, 40]
+# a.remove(30)
+# print(a)
+
+
+# # 30. Find Difference Between Two Lists
+# a = [10, 20, 30, 40]
+# b = [30, 40]
+# for i in a:
+#     if i not in b:
+#         print(i)
+
+
+# # 31. Sum of Even Numbers
+# a = [10, 15, 20, 25, 30]
+# total = 0
+# for i in a:
+#     if i % 2 == 0:
+#         total += i
+# print(total)
+
+
+# # 32. Sum of Odd Numbers
+# a = [10, 15, 20, 25, 30]
+# total = 0
+# for i in a:
+#     if i % 2 != 0:
+#         total += i
+# print(total)
+
+
+# # 33. Find Average
+# a = [10, 20, 30, 40, 50]
+# total = 0
+# for i in a:
+#     total += i
+# print(total / len(a))
+
+
+# # 34. Find Frequency of Each Element
+# a = [10, 20, 10, 30, 20, 10]
+# for i in a:
+#     if a.index(i) == a.index(i):
+#         if i not in a[:a.index(i)]:
+#             print(i, "=", a.count(i))
+
+
+# # 35. Numbers Divisible by 3 and 5
+# a = [15, 20, 30, 45, 50, 60]
+# for i in a:
+#     if i % 3 == 0 and i % 5 == 0:
+#         print(i)
+
+
+# # 36. Square of Each Element
+# a = [2, 3, 4, 5]
+# for i in a:
+#     print(i ** 2)
+
+
+# # 37. Cube of Each Element
+# a = [2, 3, 4, 5]
+# for i in a:
+#     print(i ** 3)
+
+
+# # 38. Separate Even and Odd Numbers
+# a = [10, 15, 20, 25, 30]
+# even = []
+# odd = []
+# for i in a:
+#     if i % 2 == 0:
+#         even.append(i)
+#     else:
+#         odd.append(i)
+# print("Even:", even)
+# print("Odd:", odd)
+
+
+# # 39. Check List Palindrome
+# a = [1, 2, 3, 2, 1]
+# if a == a[::-1]:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")
+
+
+# # 40. Multiplication of All Elements
+# a = [2, 3, 4]
+# total = 1
+# for i in a:
+#     total *= i
+# print(total)
+
+
+# # 41. Largest Without max()
+# a = [12, 45, 78, 23, 90]
+# largest = a[0]
+# for i in a:
+#     if i > largest:
+#         largest = i
+# print(largest)
+
+
+# # 42. Smallest Without min()
+# a = [12, 45, 78, 23, 90]
+# smallest = a[0]
+# for i in a:
+#     if i < smallest:
+#         smallest = i
+# print(smallest)
+
+
+# # 43. Second Largest Without sort()
+# a = [10, 40, 20, 80, 60]
+# largest = second = float('-inf')
+# for i in a:
+#     if i > largest:
+#         second = largest
+#         largest = i
+#     elif i > second and i != largest:
+#         second = i
+# print(second)
+
+
+# # 44. Find Missing Number
+# a = [1, 2, 3, 5, 6]
+# n = 6
+# total = n * (n + 1) // 2
+# missing = total - sum(a)
+# print(missing)
+
+
+# # 45. Find Pairs Whose Sum Is 10
+# a = [2, 3, 4, 6, 8, 7]
+# for i in range(len(a)):
+#     for j in range(i + 1, len(a)):
+#         if a[i] + a[j] == 10:
+#             print(a[i], a[j])
+
+
+# # 46. Move Zeros to the End
+# a = [0, 10, 0, 20, 30, 0]
+# b = []
+# for i in a:
+#     if i != 0:
+#         b.append(i)
+# for i in a:
+#     if i == 0:
+#         b.append(i)
+# print(b)
+
+
+# # 47. Difference Between Maximum and Minimum
+# a = [10, 50, 20, 80, 30]
+# print(max(a) - min(a))
+
+
+# # 48. Common Elements Without Duplicates
+# a = [10, 20, 10, 30, 40]
+# b = [20, 30, 50, 20]
+# c = []
+# for i in a:
+#     if i in b and i not in c:
+#         c.append(i)
+# print(c)
+
+
+# # 49. Split List Into Two Halves
+# a = [10, 20, 30, 40, 50, 60]
+# mid = len(a) // 2
+# print("First half:", a[:mid])
+# print("Second half:", a[mid:])
+
+
+# # 50. Find Longest Word
+# a = ["Python", "Java", "Programming", "HTML"]
+# longest = a[0]
+# for i in a:
+#     if len(i) > len(longest):
+#         longest = i
+# print(longest)
