@@ -1,0 +1,442 @@
+
+# # 1. Check Even or Odd
+# num = 25
+# if num % 2 == 0:
+#     print("1. Even Number")
+# else:
+#     print("1. Odd Number")
+
+
+# # 2. Check Positive or Negative
+# num = -10
+# if num > 0:
+#     print("2. Positive")
+# elif num < 0:
+#     print("2. Negative")
+# else:
+#     print("2. Zero")
+
+
+# # 3. Greatest of Three Numbers
+# a, b, c = 10, 30, 20
+# print("3. Greatest:", max(a, b, c))
+
+
+# # 4. Check Divisibility by 5
+# num = 45
+# print("4.", "Divisible by 5" if num % 5 == 0 else "Not Divisible")
+
+
+# # 5. Check Leap Year
+# year = 2024
+# if year % 400 == 0 or (year % 4 == 0 and year % 100 != 0):
+#     print("5. Leap Year")
+# else:
+#     print("5. Not Leap Year")
+
+
+# # 6. Simple Calculator
+# a, b = 20, 10
+# operator = "+"
+# if operator == "+":
+#     print("6. Result:", a + b)
+# elif operator == "-":
+#     print("6. Result:", a - b)
+# elif operator == "*":
+#     print("6. Result:", a * b)
+# elif operator == "/":
+#     print("6. Result:", a / b if b != 0 else "Cannot divide by zero")
+
+
+# # 7. Find Factorial
+# num = 5
+# fact = 1
+# for i in range(1, num + 1):
+#     fact *= i
+# print("7. Factorial:", fact)
+
+
+# # 8. Print Multiplication Table
+# num = 7
+# for i in range(1, 11):
+#     print("8.", num, "x", i, "=", num * i)
+
+
+# # 9. Sum of Natural Numbers
+# num = 10
+# total = 0
+# for i in range(1, num + 1):
+#     total += i
+# print("9. Sum:", total)
+
+
+# # 10. Reverse a Number
+# num = 12345
+# rev = 0
+# while num > 0:
+#     digit = num % 10
+#     rev = rev * 10 + digit
+#     num //= 10
+# print("10. Reverse:", rev)
+
+
+# # 11. Palindrome Number
+# num = 121
+# temp = num
+# rev = 0
+# while num > 0:
+#     rev = rev * 10 + num % 10
+#     num //= 10
+# print("11. Palindrome:", temp == rev)
+
+
+# # 12. Armstrong Number
+# num = 153
+# temp = num
+# total = 0
+# digits = len(str(num))
+# while num > 0:
+#     digit = num % 10
+#     total += digit ** digits
+#     num //= 10
+# print("12. Armstrong:", temp == total)
+
+
+# # 13. Check Prime Number
+# num = 17
+# if num > 1:
+#     for i in range(2, num):
+#         if num % i == 0:
+#             print("13. Not Prime")
+#             break
+#     else:
+#         print("13. Prime")
+# else:
+#     print("13. Not Prime")
+
+
+# # 14. Fibonacci Series
+# n = 10
+# a, b = 0, 1
+# for i in range(n):
+#     print("14.", a, end=" ")
+#     a, b = b, a + b
+# print()
+
+
+# # 15. Count Digits
+# num = 123456
+# count = 0
+# while num > 0:
+#     count += 1
+#     num //= 10
+# print("15. Digits:", count)
+
+
+# # 16. Sum of Digits
+# num = 1234
+# total = 0
+# while num > 0:
+#     total += num % 10
+#     num //= 10
+# print("16. Sum of Digits:", total)
+
+
+# # 17. Find Largest List Element
+# numbers = [10, 45, 20, 80, 30]
+# largest = numbers[0]
+# for num in numbers:
+#     if num > largest:
+#         largest = num
+# print("17. Largest:", largest)
+
+
+# # 18. Find Smallest List Element
+# numbers = [10, 45, 20, 5, 30]
+# smallest = numbers[0]
+# for num in numbers:
+#     if num < smallest:
+#         smallest = num
+# print("18. Smallest:", smallest)
+
+
+# # 19. Sum of List Elements
+# numbers = [10, 20, 30, 40, 50]
+# total = 0
+# for num in numbers:
+#     total += num
+# print("19. List Sum:", total)
+
+
+# # 20. Count Even and Odd Numbers
+# numbers = [1, 2, 3, 4, 5, 6]
+# even = 0
+# odd = 0
+# for num in numbers:
+#     if num % 2 == 0:
+#         even += 1
+#     else:
+#         odd += 1
+# print("20. Even:", even, "Odd:", odd)
+
+
+# # 21. Remove Duplicates from List
+# numbers = [1, 2, 2, 3, 4, 4, 5]
+# unique = list(set(numbers))
+# print("21. Unique:", unique)
+
+
+# # 22. Sort List in Ascending Order
+# numbers = [50, 10, 40, 20, 30]
+# numbers.sort()
+# print("22. Sorted:", numbers)
+
+
+# # 23. Find Second Largest Number
+# numbers = [10, 50, 30, 50, 20]
+# unique = sorted(set(numbers))
+# print("23. Second Largest:", unique[-2])
+
+
+# # 24. Reverse a List
+# numbers = [10, 20, 30, 40, 50]
+# numbers.reverse()
+# print("24. Reversed:", numbers)
+
+
+# # 25. Search Element in List
+# numbers = [10, 20, 30, 40]
+# search = 30
+# if search in numbers:
+#     print("25. Element Found")
+# else:
+#     print("25. Element Not Found")
+
+
+# # 26. Merge Two Lists
+# a = [1, 2, 3]
+# b = [4, 5, 6]
+# result = a + b
+# print("26. Merged:", result)
+
+
+# # 27. Separate Positive and Negative Numbers
+# numbers = [-5, 10, -2, 8, -9, 4]
+# positive = []
+# negative = []
+# for num in numbers:
+#     if num >= 0:
+#         positive.append(num)
+#     else:
+#         negative.append(num)
+# print("27. Positive:", positive)
+# print("27. Negative:", negative)
+
+
+# # 28. Find Common Elements
+# a = [1, 2, 3, 4]
+# b = [3, 4, 5, 6]
+# common = list(set(a) & set(b))
+# print("28. Common:", common)
+
+
+# # 29. Rotate List by One Position
+# numbers = [1, 2, 3, 4, 5]
+# numbers = [numbers[-1]] + numbers[:-1]
+# print("29. Rotated:", numbers)
+
+
+# # 30. Find Frequency of Elements
+# numbers = [1, 2, 2, 3, 3, 3]
+# frequency = {}
+# for num in numbers:
+#     frequency[num] = frequency.get(num, 0) + 1
+# print("30. Frequency:", frequency)
+
+
+# # 31. Reverse a String
+# text = "Python"
+# print("31. Reverse:", text[::-1])
+
+
+# # 32. Check String Palindrome
+# text = "madam"
+# print("32. Palindrome:", text == text[::-1])
+
+
+# # 33. Count Vowels in String
+# text = "programming"
+# count = 0
+# for ch in text.lower():
+#     if ch in "aeiou":
+#         count += 1
+# print("33. Vowels:", count)
+
+
+# # 34. Count Consonants
+# text = "python programming"
+# count = 0
+# for ch in text.lower():
+#     if ch.isalpha() and ch not in "aeiou":
+#         count += 1
+# print("34. Consonants:", count)
+
+
+# # 35. Count Words in String
+# text = "Python is easy to learn"
+# print("35. Word Count:", len(text.split()))
+
+
+# # 36. Count Uppercase and Lowercase
+# text = "PyThOn"
+# upper = 0
+# lower = 0
+# for ch in text:
+#     if ch.isupper():
+#         upper += 1
+#     elif ch.islower():
+#         lower += 1
+# print("36. Uppercase:", upper, "Lowercase:", lower)
+
+
+# # 37. Remove Spaces from String
+# text = "Python is very easy"
+# print("37. Without Spaces:", text.replace(" ", ""))
+
+
+# # 38. Find Character Frequency
+# text = "banana"
+# char = "a"
+# print("38. Frequency:", text.count(char))
+
+
+# # 39. Replace a Word
+# text = "I like Java"
+# print("39. Updated:", text.replace("Java", "Python"))
+
+
+# # 40. Find Longest Word
+# text = "Python programming is interesting"
+# words = text.split()
+# longest = max(words, key=len)
+# print("40. Longest Word:", longest)
+
+
+# # 41. Tuple Maximum and Minimum
+# numbers = (10, 50, 20, 5, 30)
+# print("41. Maximum:", max(numbers))
+# print("41. Minimum:", min(numbers))
+
+
+# # 42. Tuple Sum
+# numbers = (10, 20, 30, 40)
+# print("42. Tuple Sum:", sum(numbers))
+
+
+# # 43. Count Tuple Element
+# numbers = (1, 2, 2, 3, 2, 4)
+# print("43. Count:", numbers.count(2))
+
+
+# # 44. Find Tuple Index
+# numbers = (10, 20, 30, 40)
+# print("44. Index:", numbers.index(30))
+
+
+# # 45. Convert List into Tuple
+# numbers = [1, 2, 3, 4]
+# result = tuple(numbers)
+# print("45. Tuple:", result)
+
+
+# # 46. Set Union
+# a = {1, 2, 3}
+# b = {3, 4, 5}
+# print("46. Union:", a.union(b))
+
+
+# # 47. Set Intersection
+# a = {1, 2, 3, 4}
+# b = {3, 4, 5, 6}
+# print("47. Intersection:", a.intersection(b))
+
+
+# # 48. Set Difference
+# a = {1, 2, 3, 4}
+# b = {3, 4, 5}
+# print("48. Difference:", a.difference(b))
+
+
+# # 49. Remove Duplicate Values Using Set
+# numbers = [1, 2, 2, 3, 4, 4]
+# result = set(numbers)
+# print("49. Unique Set:", result)
+
+
+# # 50. Check Subset
+# a = {1, 2}
+# b = {1, 2, 3, 4}
+# print("50. Subset:", a.issubset(b))
+
+
+# # 51. Create Student Dictionary
+# student = {"name": "Rahul", "age": 21, "marks": 85}
+# print("51. Student:", student)
+
+
+# # 52. Access Dictionary Value
+# student = {"name": "Rahul", "marks": 85}
+# print("52. Marks:", student["marks"])
+
+
+# # 53. Add New Dictionary Item
+# student = {"name": "Rahul"}
+# student["age"] = 21
+# print("53. Updated:", student)
+
+
+# # 54. Update Dictionary Value
+# student = {"name": "Rahul", "marks": 70}
+# student["marks"] = 90
+# print("54. Updated:", student)
+
+
+# # 55. Delete Dictionary Item
+# student = {"name": "Rahul", "age": 21}
+# student.pop("age")
+# print("55. Deleted:", student)
+
+
+# # 56. Find Student with Highest Marks
+# students = {"Rahul": 80, "Amit": 95, "Priya": 90}
+# topper = max(students, key=students.get)
+# print("56. Topper:", topper)
+
+
+# # 57. Count Passed Students
+# students = {"A": 80, "B": 30, "C": 65, "D": 25}
+# passed = 0
+# for marks in students.values():
+#     if marks >= 35:
+#         passed += 1
+# print("57. Passed Students:", passed)
+
+
+# # 58. Merge Two Dictionaries
+# a = {"name": "Rahul", "age": 21}
+# b = {"city": "Pune", "marks": 90}
+# a.update(b)
+# print("58. Merged:", a)
+
+
+# # 59. Find Sum of Dictionary Values
+# marks = {"Math": 80, "English": 75, "Science": 90}
+# total = sum(marks.values())
+# print("59. Total Marks:", total)
+
+
+# # 60. Find Average of Dictionary Values
+# marks = {"Math": 80, "English": 75, "Science": 90}
+# average = sum(marks.values()) / len(marks)
+# print("60. Average Marks:", average)
+
